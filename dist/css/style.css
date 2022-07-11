@@ -1926,7 +1926,7 @@ body {
   overflow: hidden;
 }
 
-.people-team__photo > img {
+.people-team__photo img {
   position: absolute;
   top: 0;
   left: 0;
