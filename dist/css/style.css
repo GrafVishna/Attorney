@@ -1465,7 +1465,7 @@ body {
   padding: 8.75rem 0;
 }
 
-.history__bg {
+.history > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2651,8 +2651,9 @@ body {
     padding: 1.875rem 1.25rem;
   }
 
-  .history-paragraphs {
-    display: block;
+  .history-column__paragraphs {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .people-team {
@@ -3068,6 +3069,18 @@ body {
     text-align: center;
   }
 
+  .history-column__paragraphs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+    row-gap: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+
   .history-column__btn {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -3113,18 +3126,6 @@ body {
 
   .line-item__top-text {
     line-height: 1.3;
-  }
-
-  .history-paragraphs {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2.5rem;
-       -moz-column-gap: 2.5rem;
-            column-gap: 2.5rem;
-    row-gap: 1.875rem;
-    margin-bottom: 1.875rem;
   }
 
   .opinions__decor {
