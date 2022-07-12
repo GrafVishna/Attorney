@@ -1465,7 +1465,7 @@ body {
   padding: 8.75rem 0;
 }
 
-.history > img {
+.history__bg {
   position: absolute;
   top: 0;
   left: 0;
