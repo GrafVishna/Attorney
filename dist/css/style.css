@@ -2652,6 +2652,7 @@ body {
   }
 
   .history-column__paragraphs {
+    grid-auto-flow: row;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
