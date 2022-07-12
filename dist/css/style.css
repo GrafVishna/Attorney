@@ -253,9 +253,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 2.1875rem 0;
-  -webkit-transition: padding 0.5s linear;
-  -o-transition: padding 0.5s linear;
-  transition: padding 0.5s linear;
+  -webkit-transition: padding 0.4s linear;
+  -o-transition: padding 0.4s linear;
+  transition: padding 0.4s linear;
   border-bottom: 1px solid #4E555F;
 }
 
@@ -1201,6 +1201,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 7.5rem;
           flex: 0 0 7.5rem;
+  width: 7.5rem;
   height: 7.5rem;
   padding: 0.3125rem;
   text-align: center;
@@ -2399,6 +2400,7 @@ body {
         -ms-flex: 0 0 6.25rem;
             flex: 0 0 6.25rem;
     height: 6.25rem;
+    width: 6.25rem;
   }
 
   .item-top-successful-bg {
@@ -2819,8 +2821,32 @@ body {
 }
 
 @media (max-width: 52.5em) {
+  .top-block._top-block-scroll {
+    padding-top: 5.1875rem;
+  }
+
   .header {
     z-index: 10;
+    -webkit-transition: opacity 0.2s ease, top 0.5s ease;
+    -o-transition: opacity 0.2s ease, top 0.5s ease;
+    transition: opacity 0.2s ease, top 0.5s ease;
+  }
+
+  .header._header-scroll {
+    background: rgba(31, 39, 50, 0.94);
+    top: -100%;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+
+  .header._header-scroll._header-scroll-2 {
+    -webkit-transition: opacity 1s ease, top 0.5s ease;
+    -o-transition: opacity 1s ease, top 0.5s ease;
+    transition: opacity 1s ease, top 0.5s ease;
+    top: 0;
+    opacity: 1;
   }
 
   .top-header__logo-img img {
@@ -2885,7 +2911,7 @@ body {
     z-index: 19;
     left: 0;
     width: 100%;
-    height: 5.3125rem;
+    height: 5rem;
     background-color: #161D27;
   }
 
@@ -2967,6 +2993,13 @@ body {
 
   .top-main-block {
     margin-top: 0rem;
+  }
+
+  .practice-block-title__icon {
+    max-width: 4.0625rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 4.0625rem;
+            flex: 0 0 4.0625rem;
   }
 
   .history__columns {

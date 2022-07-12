@@ -60,6 +60,58 @@
         }));
     }
     let addWindowScrollEvent = false;
+    function headerScroll() {
+        addWindowScrollEvent = true;
+        const header = document.querySelector("header.header");
+        const topBlock = document.querySelector(".top-block");
+        const headerShow = header.hasAttribute("data-scroll-show");
+        const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
+        const startPoint = header.dataset.scroll ? header.dataset.scroll : 91;
+        const startPoint2 = header.dataset.scroll ? header.dataset.scroll : 300;
+        let scrollDirection = 0;
+        let timer;
+        document.addEventListener("windowScroll", (function(e) {
+            const scrollTop = window.scrollY;
+            clearTimeout(timer);
+            if (scrollTop >= startPoint) {
+                !header.classList.contains("_header-scroll") ? header.classList.add("_header-scroll") : null;
+                !topBlock.classList.contains("_top-block-scroll") ? topBlock.classList.add("_top-block-scroll") : null;
+                if (headerShow) {
+                    if (scrollTop > scrollDirection) {
+                        header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
+                        topBlock.classList.contains("_top-block-show") ? header.classList.remove("_top-block-show") : null;
+                    } else {
+                        !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                        !topBlock.classList.contains("_top-block-show") ? topBlock.classList.add("_top-block-show") : null;
+                    }
+                    timer = setTimeout((() => {
+                        !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                        !topBlock.classList.contains("_top-block-show") ? topBlock.classList.add("_top-block-show") : null;
+                    }), headerShowTimer);
+                }
+            } else {
+                header.classList.contains("_header-scroll") ? header.classList.remove("_header-scroll") : null;
+                topBlock.classList.contains("_top-block-scroll") ? topBlock.classList.remove("_top-block-scroll") : null;
+                if (headerShow) {
+                    header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
+                    topBlock.classList.contains("_top-block-show") ? topBlock.classList.remove("_top-block-show") : null;
+                }
+            }
+            if (scrollTop >= startPoint2) {
+                !header.classList.contains("_header-scroll-2") ? header.classList.add("_header-scroll-2") : null;
+                if (headerShow) {
+                    if (scrollTop > scrollDirection) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null; else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                    timer = setTimeout((() => {
+                        !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                    }), headerShowTimer);
+                }
+            } else {
+                header.classList.contains("_header-scroll-2") ? header.classList.remove("_header-scroll-2") : null;
+                if (headerShow) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
+            }
+            scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
+        }));
+    }
     setTimeout((() => {
         if (addWindowScrollEvent) {
             let windowScroll = new Event("windowScroll");
@@ -190,6 +242,7 @@
     //! Наблюдатель за объектами c атрибутом data-watch
     //! Функции работы скроллом
     //! Функционал добавления классов к хедеру при прокрутке
+        headerScroll();
     //! Функционал липкого блока
     //! /* Динамический адаптив */
     //! /* Форматирование чисел */
