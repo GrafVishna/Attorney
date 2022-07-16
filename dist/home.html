@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220715224554">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220716183955">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +86,7 @@
 					<div class="main-block__wrapper">
 
 						<div class="main-block__content main-content">
-							<div class="main-content__wrapper" data-watch>
+							<div class="main-content__wrapper" data-watch data-watch-threshold="0.1" data-watch-once>
 								<div class="main-content__logo logo-nomedia">
 									<img src="img/icons/decor.svg" alt="Decor">
 								</div>
@@ -104,7 +104,7 @@
 							</div>
 						</div>
 
-						<div class="main-block__image" data-watch>
+						<div class="main-block__image" data-watch data-watch-threshold="0.1" data-watch-once>
 							<picture><source srcset="img/main-block/man.webp" type="image/webp"><img src="img/main-block/man.png" alt="Man"></picture>
 						</div>
 					</div>
@@ -116,8 +116,8 @@
 				<div class="welcome__container">
 					<div class="welcome__block block-welcome">
 
-						<div class="block-welcome__card card-welcome card-welcome-top-item">
-							<div class="card-welcome__img card-welcome__img-bg">
+						<div class="block-welcome__card card-welcome card-welcome-top-item" data-watch data-watch-once data-watch-threshold="0.1">
+							<div class="card-welcome__img">
 								<picture><source srcset="img/welcome/image1.webp" type="image/webp"><img src="img/welcome/image1.jpg" alt="Welcome1"></picture>
 							</div>
 							<div class="card-welcome__content card-top-content">
@@ -130,7 +130,7 @@
 								<div class="card-welcome__logo-media">
 									<img src="img/icons/decor2.svg" alt="Decor">
 								</div>
-								<div class="card-welcome__text">
+								<div class="card-welcome__text _content-text">
 									Although we are located in Brooklyn, our maritime lawyers are proud to help the injured throughout
 									the
 									nation, including workers who were working in foreign waters at the time of the incident go up
@@ -140,7 +140,7 @@
 							</div>
 						</div>
 
-						<div class="block-welcome__card card-welcome card-welcome-experience">
+						<div class="block-welcome__card card-welcome card-welcome-experience" data-watch data-watch-once data-watch-threshold="0.1">
 							<div class="card-welcome__img">
 								<picture><source srcset="img/welcome/image2.webp" type="image/webp"><img src="img/welcome/image2.jpg" alt="Welcome2"></picture>
 							</div>
@@ -171,8 +171,8 @@
 			</section>
 			<section class="practice">
 				<div class="practice__container">
-					<div class="practice__title-block practice-block-title">
-						<div class="practice-block-title__title">
+					<div class="practice__title-block practice-block-title" data-watch>
+						<div class="practice-block-title__title-wrapper">
 							<div class="practice-block-title__title _title">
 								Explore The perfect Our Practice Areas
 							</div>
@@ -191,7 +191,7 @@
 
 					<div class="practice__cards-block practice-block-cards">
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Business Law</h3>
@@ -213,7 +213,7 @@
 							</div>
 						</div>
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Construction Law</h3>
@@ -234,7 +234,7 @@
 							</div>
 						</div>
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Car Accident</h3>
@@ -255,7 +255,7 @@
 							</div>
 						</div>
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Wrongful Death</h3>
@@ -277,7 +277,7 @@
 							</div>
 						</div>
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Criminal Law</h3>
@@ -298,7 +298,7 @@
 							</div>
 						</div>
 
-						<div class="practice-block-cards__item practice-item-card">
+						<div class="practice-block-cards__item practice-item-card" data-watch>
 							<div class="practice-item-card__text-block">
 								<div class="practice-item-card__title">
 									<h3>Family Law</h3>
@@ -1176,7 +1176,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220715224554"></script>
+	<script src="js/app.min.js?_v=20220716183955"></script>
 </body>
 
 </html>
