@@ -774,11 +774,11 @@ body {
 }
 
 .main-content__wrapper._watcher-view .main-content__title {
-  -webkit-transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  -o-transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s, -webkit-transform 0.7s;
+  -webkit-transition: opacity 1s ease-in 0s, -webkit-transform 0.7s;
+  transition: opacity 1s ease-in 0s, -webkit-transform 0.7s;
+  -o-transition: transform 0.7s, opacity 1s ease-in 0s;
+  transition: transform 0.7s, opacity 1s ease-in 0s;
+  transition: transform 0.7s, opacity 1s ease-in 0s, -webkit-transform 0.7s;
 }
 
 .main-content__wrapper._watcher-view .main-content__subtitle {
@@ -918,11 +918,11 @@ body {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 0.7s linear 0.2s, -webkit-transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, -webkit-transform 0.5s ease 0s;
-  -o-transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transition: opacity 1s ease-in 0s, -webkit-transform 0.9s ease 0s;
+  transition: opacity 1s ease-in 0s, -webkit-transform 0.9s ease 0s;
+  -o-transition: opacity 1s ease-in 0s, transform 0.9s ease 0s;
+  transition: opacity 1s ease-in 0s, transform 0.9s ease 0s;
+  transition: opacity 1s ease-in 0s, transform 0.9s ease 0s, -webkit-transform 0.9s ease 0s;
 }
 
 .card-welcome._watcher-view .card-welcome__content .card-welcome__logo {
@@ -930,11 +930,11 @@ body {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 0.7s linear 0.4s, -webkit-transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, -webkit-transform 0.5s ease 0.2s;
-  -o-transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s, -webkit-transform 0.5s ease 0.2s;
+  -webkit-transition: opacity 1s ease-in 0.5s, -webkit-transform 0.9s ease 0.2s;
+  transition: opacity 1s ease-in 0.5s, -webkit-transform 0.9s ease 0.2s;
+  -o-transition: opacity 1s ease-in 0.5s, transform 0.9s ease 0.2s;
+  transition: opacity 1s ease-in 0.5s, transform 0.9s ease 0.2s;
+  transition: opacity 1s ease-in 0.5s, transform 0.9s ease 0.2s, -webkit-transform 0.9s ease 0.2s;
 }
 
 .card-welcome._watcher-view .card-welcome__content .card-welcome__text {
@@ -942,11 +942,11 @@ body {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 0.7s linear 0.6s, -webkit-transform 0.5s ease 0.4s;
-  transition: opacity 0.7s linear 0.6s, -webkit-transform 0.5s ease 0.4s;
-  -o-transition: opacity 0.7s linear 0.6s, transform 0.5s ease 0.4s;
-  transition: opacity 0.7s linear 0.6s, transform 0.5s ease 0.4s;
-  transition: opacity 0.7s linear 0.6s, transform 0.5s ease 0.4s, -webkit-transform 0.5s ease 0.4s;
+  -webkit-transition: opacity 1s ease-in 0.7s, -webkit-transform 0.9s ease 0.4s;
+  transition: opacity 1s ease-in 0.7s, -webkit-transform 0.9s ease 0.4s;
+  -o-transition: opacity 1s ease-in 0.7s, transform 0.9s ease 0.4s;
+  transition: opacity 1s ease-in 0.7s, transform 0.9s ease 0.4s;
+  transition: opacity 1s ease-in 0.7s, transform 0.9s ease 0.4s, -webkit-transform 0.9s ease 0.4s;
 }
 
 .card-welcome._watcher-view .card-welcome__content .card-welcome__man {
@@ -954,11 +954,11 @@ body {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 0.7s linear 0.2s, -webkit-transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, -webkit-transform 0.5s ease 0s;
-  -o-transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s;
-  transition: opacity 0.7s linear 0.2s, transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transition: opacity 1.1s ease-in 0s, -webkit-transform 1s ease 0s;
+  transition: opacity 1.1s ease-in 0s, -webkit-transform 1s ease 0s;
+  -o-transition: opacity 1.1s ease-in 0s, transform 1s ease 0s;
+  transition: opacity 1.1s ease-in 0s, transform 1s ease 0s;
+  transition: opacity 1.1s ease-in 0s, transform 1s ease 0s, -webkit-transform 1s ease 0s;
 }
 
 .card-welcome._watcher-view .card-welcome__content .card-welcome__experience {
@@ -966,11 +966,11 @@ body {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 0.7s linear 0.4s, -webkit-transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, -webkit-transform 0.5s ease 0.2s;
-  -o-transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s;
-  transition: opacity 0.7s linear 0.4s, transform 0.5s ease 0.2s, -webkit-transform 0.5s ease 0.2s;
+  -webkit-transition: opacity 1.1s ease-in 0.5s, -webkit-transform 1s ease 0.3s;
+  transition: opacity 1.1s ease-in 0.5s, -webkit-transform 1s ease 0.3s;
+  -o-transition: opacity 1.1s ease-in 0.5s, transform 1s ease 0.3s;
+  transition: opacity 1.1s ease-in 0.5s, transform 1s ease 0.3s;
+  transition: opacity 1.1s ease-in 0.5s, transform 1s ease 0.3s, -webkit-transform 1s ease 0.3s;
 }
 
 .card-welcome__img {
@@ -1200,31 +1200,34 @@ body {
 }
 
 .practice-block-title._watcher-view .practice-block-title__title-wrapper .practice-block-title__title {
-  -webkit-transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  -o-transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s, -webkit-transform 0.7s;
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in 0s;
+  -o-transition: opacity 0.7s ease-in 0s;
+  transition: opacity 0.7s ease-in 0s;
 }
 
 .practice-block-title._watcher-view .practice-block-title__title-wrapper .practice-block-title__icon {
-  -webkit-transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  -o-transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s, -webkit-transform 0.7s;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in 0.21s, -webkit-transform 0.7s ease 0.4s;
+  transition: opacity 0.7s ease-in 0.21s, -webkit-transform 0.7s ease 0.4s;
+  -o-transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.21s;
+  transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.21s;
+  transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.21s, -webkit-transform 0.7s ease 0.4s;
 }
 
-.practice-block-title._watcher-view .practice-block-title__title-wrapper .practice-block-title__text-block {
-  -webkit-transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  transition: opacity 1s linear 0s, -webkit-transform 0.7s;
-  -o-transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s;
-  transition: transform 0.7s, opacity 1s linear 0s, -webkit-transform 0.7s;
+.practice-block-title._watcher-view .practice-block-title__text-block {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in 0.4s;
+  -o-transition: opacity 1s ease-in 0.4s;
+  transition: opacity 1s ease-in 0.4s;
 }
 
 .practice-block-title__title {
   max-width: 23.125rem;
+  opacity: 0;
 }
 
 .practice-block-title__title:not(:last-child) {
@@ -1235,6 +1238,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 41.25rem;
           flex: 0 1 41.25rem;
+  opacity: 0;
 }
 
 @supports (font-size: clamp( 1rem , 0.8807749627rem  +  0.5961251863vw , 1.25rem )) {
@@ -1254,6 +1258,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5.9375rem;
           flex: 0 0 5.9375rem;
+  opacity: 0;
 }
 
 .practice-block-title__icon .nomedia {
@@ -1411,15 +1416,59 @@ body {
   border-bottom: 1px solid #D7D7D7;
 }
 
+.top-successful__content-wrapper._watcher-view .top-successful__title {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.7s ease-in 0s, -webkit-transform 0.7s ease;
+  transition: opacity 0.7s ease-in 0s, -webkit-transform 0.7s ease;
+  -o-transition: transform 0.7s ease, opacity 0.7s ease-in 0s;
+  transition: transform 0.7s ease, opacity 0.7s ease-in 0s;
+  transition: transform 0.7s ease, opacity 0.7s ease-in 0s, -webkit-transform 0.7s ease;
+}
+
+.top-successful__content-wrapper._watcher-view .top-successful__icon {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in 0.2s, -webkit-transform 0.7s ease 0.2s;
+  transition: opacity 0.7s ease-in 0.2s, -webkit-transform 0.7s ease 0.2s;
+  -o-transition: transform 0.7s ease 0.2s, opacity 0.7s ease-in 0.2s;
+  transition: transform 0.7s ease 0.2s, opacity 0.7s ease-in 0.2s;
+  transition: transform 0.7s ease 0.2s, opacity 0.7s ease-in 0.2s, -webkit-transform 0.7s ease 0.2s;
+}
+
+.top-successful__content-wrapper._watcher-view .top-successful__subtitle {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in 0.4s, -webkit-transform 0.7s ease 0.4s;
+  transition: opacity 0.7s ease-in 0.4s, -webkit-transform 0.7s ease 0.4s;
+  -o-transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.4s;
+  transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.4s;
+  transition: transform 0.7s ease 0.4s, opacity 0.7s ease-in 0.4s, -webkit-transform 0.7s ease 0.4s;
+}
+
 .top-successful__title {
   text-align: center;
   margin-bottom: 0.625rem;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }
 
 .top-successful__icon {
   margin: 0 auto;
   max-width: 5.9375rem;
   margin-bottom: 2.5rem;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }
 
 .top-successful__icon img {
@@ -1428,6 +1477,10 @@ body {
 
 .top-successful__subtitle {
   text-align: center;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
   margin-bottom: 3.75rem;
 }
 
@@ -1450,6 +1503,18 @@ body {
   gap: 1.875rem;
 }
 
+.items-top-successful._watcher-view .items-top-successful__item {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 1s ease;
+  transition: opacity 1s ease-in, -webkit-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease-in;
+  transition: transform 1s ease, opacity 1s ease-in;
+  transition: transform 1s ease, opacity 1s ease-in, -webkit-transform 1s ease;
+}
+
 .items-top-successful__item {
   padding: 1.875rem;
   display: -webkit-box;
@@ -1465,6 +1530,10 @@ body {
   -webkit-column-gap: 1.25rem;
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 
 .items-top-successful__item-logo {
