@@ -1,6 +1,6 @@
 (() => {
     "use strict";
-    const modules_flsModules = {};
+    const flsModules = {};
     function isWebp() {
         function testWebP(callback) {
             let webP = new Image;
@@ -348,7 +348,7 @@
             }));
         }
     }
-    modules_flsModules.watcher = new ScrollWatcher({});
+    flsModules.watcher = new ScrollWatcher({});
     let addWindowScrollEvent = false;
     function headerScroll() {
         addWindowScrollEvent = true;

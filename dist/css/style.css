@@ -2736,9 +2736,6 @@ body {
   border-bottom: 1px solid #3B434E;
   padding: 1.4375rem 0;
   font-family: Outfit;
-  -webkit-transition: all 5000s ease-in-out 5000s, border-bottom 0s ease 0s;
-  -o-transition: all 5000s ease-in-out 5000s, border-bottom 0s ease 0s;
-  transition: all 5000s ease-in-out 5000s, border-bottom 0s ease 0s;
   background: transparent;
   outline: none;
 }
@@ -2755,11 +2752,6 @@ body {
   .form__item-input textarea {
     font-size: calc(1rem + 0.25 * (100vw - 61.9375rem) / 28.0625);
   }
-}
-
-.form__item-input input input:-webkit-autofill,
-.form__item-input textarea input:-webkit-autofill {
-  background: transparent;
 }
 
 .form__item-input input:focus,
@@ -2881,6 +2873,21 @@ body {
 .form__item-input textarea {
   resize: none;
   margin-bottom: 1.8125rem;
+}
+
+.form__item-input input:-webkit-autofill,
+.form__item-input input:-webkit-autofill:hover,
+.form__item-input input:-webkit-autofill:focus,
+.form__item-input textarea:-webkit-autofill,
+.form__item-input textarea:-webkit-autofill:hover,
+.form__item-input textarea:-webkit-autofill:focus,
+.form__item-input select:-webkit-autofill,
+.form__item-input select:-webkit-autofill:hover,
+.form__item-input select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 625rem transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form__btn {
@@ -4812,6 +4819,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
 }
 
