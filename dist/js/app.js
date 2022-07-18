@@ -506,6 +506,11 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
+    const newElement = document.querySelector(".footer__copy-social-icons");
+    const cloneElement = newElement.cloneNode(true);
+    const cloneWrapper = document.querySelector(".menu__body");
+    cloneElement.classList.add("social--fixed");
+    cloneWrapper.append(cloneElement);
     window["FLS"] = true;
     //! /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
     //! /* (i) необходимо для корректного отображения webp из css  */

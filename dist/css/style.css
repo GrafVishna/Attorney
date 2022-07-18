@@ -92,6 +92,10 @@ body {
       touch-action: none;
 }
 
+body * img {
+  pointer-events: none;
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -207,7 +211,6 @@ body {
   padding: 1.3125rem 4.125rem;
   font-size: 22px;
   line-height: 1.5909090909;
-  letter-spacing: 0.400000006px;
   color: #1F2732;
   background-color: #D1B06B;
   border: 2px solid #D1B06B;
@@ -714,6 +717,10 @@ body {
   }
 }
 
+.menu__body .social--fixed {
+  display: none;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,7 +787,7 @@ body {
   position: relative;
 }
 
-.menu-open * .menu__list {
+.menu-open * .menu__body {
   opacity: 1;
   visibility: visible;
 }
@@ -790,6 +797,10 @@ body {
       -ms-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.menu-open * .menu__item::before {
+  opacity: 0.5;
 }
 
 .top-main-block {
@@ -2763,7 +2774,6 @@ body {
   color: #FFFFFF;
   font-family: Outfit;
   line-height: 0.84;
-  letter-spacing: 0.400000006px;
   opacity: 0.7;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -2773,7 +2783,6 @@ body {
   color: #FFFFFF;
   font-family: Outfit;
   line-height: 0.84;
-  letter-spacing: 0.400000006px;
   opacity: 0.7;
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -2783,7 +2792,6 @@ body {
   color: #FFFFFF;
   font-family: Outfit;
   line-height: 0.84;
-  letter-spacing: 0.400000006px;
   opacity: 0.7;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -2793,7 +2801,6 @@ body {
   color: #FFFFFF;
   font-family: Outfit;
   line-height: 0.84;
-  letter-spacing: 0.400000006px;
   opacity: 0.7;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -2804,7 +2811,6 @@ body {
   color: #FFFFFF;
   font-family: Outfit;
   line-height: 0.84;
-  letter-spacing: 0.400000006px;
   opacity: 0.7;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -2885,7 +2891,7 @@ body {
 .form__item-input select:-webkit-autofill:hover,
 .form__item-input select:-webkit-autofill:focus {
   -webkit-text-fill-color: #FFFFFF;
-  -webkit-box-shadow: 0 0 0px 625rem transparent inset;
+  -webkit-box-shadow: 0 0 0 625rem transparent inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -2895,11 +2901,11 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 1.75rem;
-  color: #3B434E;
-  background-color: #FFFFFF;
-  font-weight: 700;
   line-height: 0.88;
-  border: 2px solid #FFFFFF;
+  font-weight: 700;
+  color: #1F2732;
+  background-color: #D1B06B;
+  border: 2px solid #D1B06B;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2919,10 +2925,8 @@ body {
 
 .form__btn:hover,
 .form__btn:focus {
-  outline: none;
   background: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
-  border: 2px solid #D1B06B;
 }
 
 .hidden {
@@ -4419,7 +4423,20 @@ body {
   }
 
   .top-header__button {
-    display: none;
+    position: fixed;
+    bottom: 3.4375rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 21;
+  }
+
+  .top-header__button a {
+    padding: 0.625rem 2.5rem;
+    white-space: nowrap;
+    background: #D1B06B;
+    color: #FFFFFF;
   }
 
   .bottom-header {
@@ -4448,25 +4465,56 @@ body {
     display: none;
   }
 
-  .menu__list {
-    font-family: "Cormorant Garamond";
-    visibility: hidden;
-    opacity: 0;
-    padding-top: 6.25rem;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .menu__body {
     position: fixed;
-    overflow-x: auto;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
     z-index: 20;
+    background-color: rgba(31, 39, 50, 0.95);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-bottom: 6.25rem;
+  }
+
+  .menu__body .social--fixed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 9.375rem;
+    position: fixed;
+    bottom: 0.9375rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu__list {
+    font-family: "Cormorant Garamond";
+    padding-top: 6.25rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(31, 39, 50, 0.95);
+    position: fixed;
+    overflow-x: auto;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 70vh;
+    z-index: 21;
   }
 
   .menu__list::before {
@@ -4497,14 +4545,19 @@ body {
     display: inline-block;
     position: absolute;
     z-index: 20;
-    width: 3.75rem;
-    height: 1.25rem;
-    bottom: -1.0625rem;
+    width: 1.875rem;
+    height: 0.125rem;
+    border-radius: 0.625rem;
+    bottom: -0.625rem;
     left: 50%;
+    background-color: #D1B06B;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    background: url("../img/icons/decor2.svg") 59%/auto 100% no-repeat;
+    -webkit-transition: opacity 0.7s ease 0.5s;
+    -o-transition: opacity 0.7s ease 0.5s;
+    transition: opacity 0.7s ease 0.5s;
+    opacity: 0;
   }
 
   .menu__link {
@@ -4820,6 +4873,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 52.5em) and (max-width: 30em) {
+  .menu__list::before {
+    height: 4.5625rem;
   }
 }
 
