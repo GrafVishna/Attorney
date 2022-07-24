@@ -680,7 +680,8 @@
             const scrollUp = document.querySelector(".scroll-to-up-container");
             const headerShow = header.hasAttribute("data-scroll-show");
             const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
-            const startPoint = header.dataset.scroll ? header.dataset.scroll : 91;
+            const startPoint = header.dataset.scroll ? header.dataset.scroll : 100;
+            const startPoint1 = header.dataset.scroll ? header.dataset.scroll : 120;
             header.dataset.scroll && header.dataset.scroll;
             let scrollDirection = 0;
             let timer;
@@ -716,6 +717,18 @@
                         topBlock.classList.contains("_top-block-show") ? topBlock.classList.remove("_top-block-show") : null;
                         scrollUp.classList.contains("_top-block-show") ? scrollUp.classList.remove("_top-block-show") : null;
                     }
+                }
+                if (scrollTop >= startPoint1) {
+                    !header.classList.contains("_header-scroll-1") ? header.classList.add("_header-scroll-1") : null;
+                    if (headerShow) {
+                        if (scrollTop > scrollDirection) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null; else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                        timer = setTimeout((() => {
+                            !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                        }), headerShowTimer);
+                    }
+                } else {
+                    header.classList.contains("_header-scroll-1") ? header.classList.remove("_header-scroll-1") : null;
+                    if (headerShow) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
                 }
                 scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
             }));

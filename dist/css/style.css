@@ -1,8 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:regular&display=swap);
-
-@import url(https://fonts.googleapis.com/css?family=Outfit:regular,700&display=swap);
-
 @charset "UTF-8";
+
+@font-face {
+  font-family: Cormorant-Garamond;
+  font-display: swap;
+  src: url("../fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("../fonts/CormorantGaramond-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-Bold.woff2") format("woff2"), url("../fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-Regular.woff2") format("woff2"), url("../fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   padding: 0px;
@@ -155,6 +175,18 @@ body * img {
 .top-block {
   position: relative;
   overflow: hidden;
+}
+
+@supports (padding-top: clamp( 8.125rem , -7.625rem  +  30vw , 19.375rem )) {
+  .top-block {
+    padding-top: clamp( 8.125rem , -7.625rem  +  30vw , 19.375rem );
+  }
+}
+
+@supports not (padding-top: clamp( 8.125rem , -7.625rem  +  30vw , 19.375rem )) {
+  .top-block {
+    padding-top: calc(8.125rem + 11.25 * (100vw - 52.5rem) / 37.5);
+  }
 }
 
 .top-block__bg {
@@ -636,7 +668,10 @@ body * img {
 }
 
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 3;
 }
 
@@ -1084,6 +1119,7 @@ body * img {
 }
 
 .main-content__wrapper {
+  min-height: 25rem;
   padding: 4.375rem 0;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -4640,14 +4676,20 @@ body * img {
 }
 
 @media (max-width: 52.5em) {
-  .top-block._top-block-scroll {
-    padding-top: 5.1875rem;
+  .top-block {
+    padding-top: 5rem;
+  }
+
+  .scroll-to-up-container._top-block-show {
+    bottom: 1.25rem;
   }
 
   .scroll-to-up-container {
     border: 2px solid #D1B06B;
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    bottom: 0.9375rem;
+    right: 0.625rem;
   }
 
   .scroll-to-up-container .scroll-to-up::before,
@@ -4658,21 +4700,30 @@ body * img {
 
   .header {
     z-index: 10;
-    -webkit-transition: opacity 0.2s ease, top 0.5s ease;
-    -o-transition: opacity 0.2s ease, top 0.5s ease;
-    transition: opacity 0.2s ease, top 0.5s ease;
   }
 
   .header._header-scroll {
+    -webkit-transition: opacity 0s ease, top 0s ease;
+    -o-transition: opacity 0s ease, top 0s ease;
+    transition: opacity 0s ease, top 0s ease;
     background: rgba(31, 39, 50, 0.94);
     top: -100%;
     opacity: 0;
     position: fixed;
     left: 0;
+    top: -100%;
+    opacity: 0;
     width: 100%;
   }
 
+  .header._header-scroll-1 {
+    -webkit-transition: opacity 0.3s ease, top 0.5s ease;
+    -o-transition: opacity 0.3s ease, top 0.5s ease;
+    transition: opacity 0.3s ease, top 0.5s ease;
+  }
+
   .header._header-show {
+    visibility: visible;
     -webkit-transition: opacity 0.5s ease, top 0.6s ease;
     -o-transition: opacity 0.5s ease, top 0.6s ease;
     transition: opacity 0.5s ease, top 0.6s ease;
