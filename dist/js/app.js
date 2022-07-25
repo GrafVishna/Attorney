@@ -207,6 +207,13 @@
                 document.documentElement.classList.add(className);
             }));
         }
+        function addLoadedClass() {
+            window.addEventListener("load", (function() {
+                setTimeout((function() {
+                    document.documentElement.classList.add("loaded");
+                }), 0);
+            }));
+        }
         function getHash() {
             if (location.hash) return location.hash.replace("#", "");
         }
@@ -848,6 +855,7 @@
                 isWebp();
         //! /* Добавление класса touch для HTML если браузер мобильный */
         //! /* Добавление loaded для HTML после полной загрузки страницы */
+                addLoadedClass();
         //! /* Модуль для работы с меню (Бургер) */
                 menuInit();
         //! / Учет плавающей панели на мобильных устройствах при 100vh */
