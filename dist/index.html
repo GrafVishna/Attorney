@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220726164201">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220726235208">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -51,10 +51,10 @@
 							</div>
 						</a>
 						<div class="top-header__button-block">
-							<div class="top-header__button _btn-gray" data-da=".menu__body,840,0">
+							<div class="top-header__button _btn-gray" data-da=".menu__body,840,0" )>
 								<span class="ellement1"></span>
 								<span class="ellement2"></span>
-								<a href="#">A Consultation</a>
+								<a href="#" data-popup=".popup">A Consultation</a>
 							</div>
 							<div class="top-header__menu-icon-wrapper">
 								<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -170,7 +170,7 @@
 							<div class="card-welcome__content">
 								<div class="card-welcome__man">
 									<div class="card-welcome__photo">
-										<picture><source srcset="img/welcome/Peter2.webp" type="image/webp"><img src="img/welcome/Peter2.png" alt="Peter"></picture>
+										<picture><source srcset="img/welcome/Peter22.webp" type="image/webp"><img src="img/welcome/Peter22.png" alt="Peter"></picture>
 										<!-- <picture><source srcset="img/main-block/man.webp" type="image/webp"><img src="img/main-block/man.png" alt="Peter"></picture> -->
 									</div>
 									<div class="card-welcome__name">Peter Parker</div>
@@ -868,7 +868,7 @@
 							<span class="hidden">Your Message</span>
 							<textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
 						</label>
-						<button class="form__btn " type="submit">Get An Appointment</button>
+						<button class="form__btn forms__btn" type="submit">Get An Appointment</button>
 					</form>
 				</div>
 				<picture><source srcset="img/form/form-bg.webp" type="image/webp"><img src="img/form/form-bg.jpg" alt="Form-bg"></picture>
@@ -1201,17 +1201,43 @@
 				</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__popup-body body-popup-form">
+					<div class="body-popup-form__row">
+						<div class="body-popup-form__row-item">
+							<label class="body-popup-form__item-input">
+								<span class="hidden">Full name</span>
+								<input type="text" name="Name" placeholder="Full name*" required>
+							</label>
+							<label class="body-popup-form__item-input">
+								<span class="hidden">Email Address</span>
+								<input type="email" name="Email" placeholder="Email Address*" required>
+							</label>
+						</div>
+						<div class="body-popup-form__row-item">
+							<label class="body-popup-form__item-input">
+								<span class="hidden">Phone Number</span>
+								<input type="tel" name="Phone" placeholder="Phone Number*" required>
+							</label>
+							<label class="body-popup-form__item-input">
+								<span class="hidden">Subject</span>
+								<input type="text" name="Subject" placeholder="Subject">
+							</label>
+						</div>
+					</div>
+					<label class="body-popup-form__row-bottom body-popup-form__item-input">
+						<span class="hidden">Your Message</span>
+						<textarea name="Message" id="" cols="30" rows="4" placeholder="Your Message"></textarea>
+					</label>
+					<button class="body-popup-form__btn forms__btn" type="submit">Get An Appointment</button>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220726164201"></script>
+	<script src="js/app.min.js?_v=20220726235208"></script>
 </body>
 
 </html>
