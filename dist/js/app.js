@@ -408,6 +408,10 @@
                     bodyLockToggle();
                     document.documentElement.classList.toggle("menu-open");
                 }
+                if (bodyLockStatus && e.target.closest(".popup__close")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open");
+                }
             }));
         }
         function menuClose() {

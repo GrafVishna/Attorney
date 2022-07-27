@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220726235208">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220727152700">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -51,11 +51,12 @@
 							</div>
 						</a>
 						<div class="top-header__button-block">
-							<div class="top-header__button _btn-gray" data-da=".menu__body,840,0" )>
+							<a href="#" class="top-header__button _btn-gray" data-popup=".popup" data-da=".menu__body,840,0" )>
+								A Consultation
 								<span class="ellement1"></span>
 								<span class="ellement2"></span>
-								<a href="#" data-popup=".popup">A Consultation</a>
-							</div>
+								<span class="ellement3"></span>
+							</a>
 							<div class="top-header__menu-icon-wrapper">
 								<button type="button" class="menu__icon icon-menu"><span></span></button>
 							</div>
@@ -122,7 +123,7 @@
 									companies and win.
 								</div>
 								<div class="main-content__button _btn">
-									<a href="#">Get In Touch</a>
+									<a data-popup=".popup" href="#">Get In Touch</a>
 								</div>
 							</div>
 						</div>
@@ -170,8 +171,7 @@
 							<div class="card-welcome__content">
 								<div class="card-welcome__man">
 									<div class="card-welcome__photo">
-										<picture><source srcset="img/welcome/Peter22.webp" type="image/webp"><img src="img/welcome/Peter22.png" alt="Peter"></picture>
-										<!-- <picture><source srcset="img/main-block/man.webp" type="image/webp"><img src="img/main-block/man.png" alt="Peter"></picture> -->
+										<picture><source srcset="img/welcome/Peter3.webp" type="image/webp"><img src="img/welcome/Peter3.png" alt="Peter"></picture>
 									</div>
 									<div class="card-welcome__name">Peter Parker</div>
 								</div>
@@ -229,11 +229,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon1.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -250,11 +251,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon2.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -271,11 +273,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon3.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -293,11 +296,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon4.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -314,11 +318,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon5.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -335,11 +340,12 @@
 								<div class="practice-item-card__button-icon">
 									<img src="img/icons/practice-icon6.svg" alt="practice-icon">
 								</div>
-								<div class="practice-item-card__button-button _btn-gray">
+								<a href="#" class="practice-item-card__button-button _btn-gray">
+									View More
 									<span class="ellement1"></span>
 									<span class="ellement2"></span>
-									<a href="#">View More</a>
-								</div>
+									<span class="ellement3"></span>
+								</a>
 							</div>
 						</div>
 
@@ -1204,7 +1210,12 @@
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__top-line">
+					<div class="popup__info">Write to us, and we will contact you</div>
+					<button data-close type="button" class="popup__close">
+						<img src="img/icons/close.svg" alt="">
+					</button>
+				</div>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__popup-body body-popup-form">
 					<div class="body-popup-form__row">
 						<div class="body-popup-form__row-item">
@@ -1214,7 +1225,7 @@
 							</label>
 							<label class="body-popup-form__item-input">
 								<span class="hidden">Email Address</span>
-								<input type="email" name="Email" placeholder="Email Address*" required>
+								<input data-required="email" type="email" name="Email" placeholder="Email Address*" required>
 							</label>
 						</div>
 						<div class="body-popup-form__row-item">
@@ -1237,7 +1248,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220726235208"></script>
+	<script src="js/app.min.js?_v=20220727152700"></script>
 </body>
 
 </html>
